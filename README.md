@@ -194,7 +194,26 @@ This figure demonstrates that the additions to the setup implement the front end
 
 <p align="justify">
 Since the setup has not been properly tuned, the output signal from the Tunable Low Pass Filter (LPF) module likely contains both quadrature components. Typically, the phase of the local carriers is adjusted, while maintaining a 90° separation to compensate for any phase delay in the channel, ensuring that only one opposing quadrature component remains at each LPF output. However, in this case, the local carriers and bit clock are taken directly from the QPSK modulator. As a result, instead of adjusting the carrier phase, this process is modeled by varying the phase delay in the channel.
+</p>
 
+
+
+
+## CONCLUSION/RESULTS
+<p align="justify">
+This project successfully implemented a complete QPSK receiver, from signal generation through full demodulation to final data recovery. This included modeling the digital data, splitting it into even and odd bit streams, modulating quadrature carriers, and demodulating the received signal while accounting for channel effects such as noise, band-limiting, and phase delay.
+</p>
+
+| **Part** | **Process** | **Description** | **Result** |
+|----------|------------|----------------|------------|
+| **Part 1** | Serial-to-Parallel Validation | Splitting and reconstructing digital data into I and Q channels | Original bitstream successfully recovered |
+| **Part 2** | QPSK Waveform Generation | Modulation using two carriers with 90° phase difference | Stable QPSK waveform observed |
+| **Part 3** | Channel Modeling | Introduction of noise, filtering, and phase delay | Signal distortion observed (realistic channel effects) |
+| **Part 4** | Full Demodulation | Carrier recovery and bit synchronization | Data recovered with minimal errors |
+
+<p align="justify">
+The system confirmed that QPSK (Quadrature Phase Shift Keying) transmits 2 bits per symbol, improving bandwidth efficiency. The modulator generated the correct quadrature signals, and the demodulator successfully retrieved the data. Despite the presence of channel impairments such as noise and phase shifts that can degrade signal quality, effective synchronization and filtering ensured accurate data recovery. This underscores the essential roles of carrier alignment and timing control in digital communication systems.
+</p>
 
 
 
