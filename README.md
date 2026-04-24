@@ -3,6 +3,15 @@
 This project demonstrates a complete Quadrature Phase Shift Keying (QPSK) receiver, showcasing the entire demodulation process from a modulated signal to recovered digital data. The system encompasses all crucial stages of QPSK demodulation, including signal acquisition, carrier recovery, symbol synchronization, and bit extraction. It is designed to provide a clear and practical understanding of digital communication principles, making it suitable for students, researchers, and embedded systems developers. With a strong focus on simplicity and clarity, this project effectively bridges theoretical concepts in digital communications with real-world implementation.
 </p>
 
+<div id="top"></div>
+
+## TABLE OF CONTENTS
+ - [PART 1: Validation of Serial to Parallel Functionality](https://github.com/Justine2323/QPSK-Receiver-Full-Demodulation-Pipeline#part-1-validation-of-serial-to-parallel-functionality)
+ - [PART 2: Producing the QPSK Waveform](https://github.com/Justine2323/QPSK-Receiver-Full-Demodulation-Pipeline#part-2-producing-the-qpsk-waveform)
+ - [PART 3: Modeling the Communication Channel](https://github.com/Justine2323/QPSK-Receiver-Full-Demodulation-Pipeline#part-3-modeling-the-communication-channel)
+ - [PART 4: Performing Full QPSK Demodulation](https://github.com/Justine2323/QPSK-Receiver-Full-Demodulation-Pipeline#part-4-performing-full-qpsk-demodulation)
+ - [CONCLUSIONS & RESULTS](https://github.com/Justine2323/QPSK-Receiver-Full-Demodulation-Pipeline#conclusionresults)
+
 ## Part 1: Validation of Serial to Parallel Functionality
 <p align="justify">
 To generate a QPSK (Quadrature Phase Shift Keying) signal, the Sequence Generator module begins by modeling the digital data. Next, the 2-bit Serial-to-Parallel Converter module divides the data into even and odd bit streams. This important step reduces the symbol rate by half and sets the data up for independent modulation of the I (in-phase) and Q (quadrature) channels.
@@ -243,5 +252,5 @@ This project successfully implemented a complete QPSK receiver, from signal gene
 The system confirmed that QPSK (Quadrature Phase Shift Keying) transmits 2 bits per symbol, improving bandwidth efficiency. The modulator generated the correct quadrature signals, and the demodulator successfully retrieved the data. Despite the presence of channel impairments such as noise and phase shifts that can degrade signal quality, effective synchronization and filtering ensured accurate data recovery. This underscores the essential roles of carrier alignment and timing control in digital communication systems.
 </p>
 
-
+[Go back to the top](#top)
 
