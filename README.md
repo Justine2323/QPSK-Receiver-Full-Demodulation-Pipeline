@@ -172,6 +172,29 @@ This project successfully developed a complete QPSK (Quadrature Phase Shift Keyi
 Implementing both a QPSK modulator and a complete demodulator on a single Emona Telecoms-Trainer 101 is not feasible due to the limited availability of modules. Instead, to achieve full demodulation, you need the ETT-101-20 QPSK DEMOD board, which includes the necessary circuits for carrier recovery and bit synchronization. While setting up the system is not particularly difficult, locating wiring errors can be challenging. Therefore, this guide will walk you through building the complete QPSK demodulator in stages, allowing you to verify each section before moving on to the next.
 </p>
 
+<p align = "center">
+<img width="1024" height="824" alt="image" src="https://github.com/user-attachments/assets/b26dcd15-5669-4db7-af0f-d29717b7c6c4" />
+</p>
+
+<p align = "center">
+<em> Figure 4.0: Connecting Diagram </em>
+</p>
+
+<p align="justify">
+This figure demonstrates that the additions to the setup implement the front end of the QPSK demodulator. The carriers are sourced from the modulator instead of being generated locally at the receiver to ensure synchronization, which is essential for QPSK demodulation.
+</p>
+
+<p align = "center">
+<img width="1024" height="464" alt="image" src="https://github.com/user-attachments/assets/8f3b89fa-f66e-4e1f-ac05-3087d27917eb" />
+</p>
+
+<p align = "center">
+<em> Figure 4.1: Connecting Diagram </em>
+</p>
+
+<p align="justify">
+Since the setup has not been properly tuned, the output signal from the Tunable Low Pass Filter (LPF) module likely contains both quadrature components. Typically, the phase of the local carriers is adjusted, while maintaining a 90° separation to compensate for any phase delay in the channel, ensuring that only one opposing quadrature component remains at each LPF output. However, in this case, the local carriers and bit clock are taken directly from the QPSK modulator. As a result, instead of adjusting the carrier phase, this process is modeled by varying the phase delay in the channel.
+
 
 
 
