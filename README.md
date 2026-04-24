@@ -196,7 +196,35 @@ This figure demonstrates that the additions to the setup implement the front end
 Since the setup has not been properly tuned, the output signal from the Tunable Low Pass Filter (LPF) module likely contains both quadrature components. Typically, the phase of the local carriers is adjusted, while maintaining a 90° separation to compensate for any phase delay in the channel, ensuring that only one opposing quadrature component remains at each LPF output. However, in this case, the local carriers and bit clock are taken directly from the QPSK modulator. As a result, instead of adjusting the carrier phase, this process is modeled by varying the phase delay in the channel.
 </p>
 
+<details>
+  <summary> PART 4: OUTPUT RESULTS </summary>
 
+<p align = "center">
+<img width="1024" height="804" alt="image" src="https://github.com/user-attachments/assets/95a73f31-f306-4862-aaef-6647fb03e751" />
+</p>
+
+<p align = "center">
+<img width="1024" height="804" alt="image" src="https://github.com/user-attachments/assets/9cace2d4-1253-472a-8056-7e489f055db4" />
+</p>
+
+<p align = "center">
+<img width="1024" height="804" alt="image" src="https://github.com/user-attachments/assets/f8a6af65-4fb6-45b6-a77b-7cc9db6fb6e5" />
+</p>
+
+<p align = "center">
+<img width="1024" height="804" alt="image" src="https://github.com/user-attachments/assets/84cfdcf1-a7db-4c9e-82b4-3051cdbff960" />
+</p>
+
+<p align = "center">
+<img width="1024" height="804" alt="image" src="https://github.com/user-attachments/assets/e9b02051-b40e-4355-9cd1-9ba239458385" />
+</p>
+
+<p align = "center">
+<img width="1024" height="804" alt="image" src="https://github.com/user-attachments/assets/beacf173-1027-4bee-9454-6617fd02f0ba" />
+</p>
+
+  </p>
+</details>
 
 
 ## CONCLUSION/RESULTS
