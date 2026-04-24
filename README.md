@@ -167,6 +167,10 @@ This project successfully developed a complete QPSK (Quadrature Phase Shift Keyi
 </p>
 
 
+## Part 4: Performing Full QPSK Demodulation
+<p align="justify">
+Implementing both a QPSK modulator and a complete demodulator on a single Emona Telecoms-Trainer 101 is not feasible due to the limited availability of modules. Instead, to achieve full demodulation, you need the ETT-101-20 QPSK DEMOD board, which includes the necessary circuits for carrier recovery and bit synchronization. While setting up the system is not particularly difficult, locating wiring errors can be challenging. Therefore, this guide will walk you through building the complete QPSK demodulator in stages, allowing you to verify each section before moving on to the next.
+</p>
 
 
 
