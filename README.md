@@ -145,10 +145,26 @@ To obtain a stable trace on the oscilloscope display, the Trigger Source signal 
   </p>
 </details>
 
-## Part 3: 
+## Part 3: Modeling the Communication Channel
+<p align="justify">
+This project successfully developed a complete QPSK (Quadrature Phase Shift Keying) receiver, covering all aspects from signal generation to full demodulation and final data recovery. It involved modeling the digital data and separating it into even and odd bit streams. The data was then modulated using quadrature carriers and demodulated from the received signal. The process also addressed various channel effects, such as noise, bandwidth limitations, and phase delay.
+</p>
 
+<p align = "center">
+<img width="1024" height="809" alt="image" src="https://github.com/user-attachments/assets/f4b8296f-e587-48bd-a716-a609e957587a" />
+</p>
 
+<p align = "center">
+<em> Figure 3.0: Connecting Diagram </em>
+</p>
 
+<p align = "center">
+<img width="1024" height="395" alt="image" src="https://github.com/user-attachments/assets/ac458bf4-7751-43b2-9884-1fd240e7de79" />
+</p>
+
+<p align = "center">
+<em> Figure 3.1: Connecting Diagram </em>
+</p>
 
 
 
